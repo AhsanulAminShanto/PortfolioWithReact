@@ -35,7 +35,7 @@ function Header() {
         <NavLink to="/resume" className={({ isActive }) => (isActive ? "active" : "")}>Resume</NavLink>
         <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact</NavLink>
       </nav>
-      <a href="/hire" className="hire-btn">Hire me</a>
+      <a href="https://m.me/ahsanulaminshanto" className="hire-btn">Hire me</a>
     </header>
   );
 }

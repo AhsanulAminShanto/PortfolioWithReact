@@ -42,7 +42,7 @@ function Home() {
             <p>Projects Completed</p>
           </div>
           <div className="stat">
-            <h3>6+</h3>
+            <h3>30+</h3>
             <p>Tech Stack Used</p>
           </div>
           <div className="stat">

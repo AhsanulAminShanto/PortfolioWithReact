@@ -219,13 +219,6 @@ section {
   font-style: normal;
 }
 
-/* ========== Projects (unchanged) ========== */
-
-/* No changes to Projects section */
-
-/* ========== Contact (unchanged) ========== */
-
-/* No changes to Contact section */
 
 /* ========== About ========== */
 .about {
@@ -274,6 +267,7 @@ section {
   flex: 1;
   min-width: 300px;
   max-width: 50%;
+  margin-top: 40px;
 }
 
 .about-img img {
@@ -311,7 +305,7 @@ section {
 }
 
 .about p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--text-color);
   line-height: 1.5;
   margin-bottom: 20px;
@@ -326,7 +320,7 @@ section {
 }
 
 .about ul.about-list li {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--text-color);
   margin-bottom: 10px;
   display: inline-block;
@@ -349,6 +343,16 @@ section {
   transition: 0.3s;
   font-size: 0.9rem;
   text-align: center; /* Center-align button text */
+}
+.service-icon {
+  font-size: 45px;
+  color: var(--main-color);
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-icon:hover {
+  transform: scale(1.2);
 }
 
 /* ========== Services / Skills Section ========== */
@@ -550,11 +554,10 @@ section {
 }
 /* Container for buttons */
 .project-links {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px; /* space between buttons */
-  justify-content: flex-start; /* align left, you can use center if you want */
-  flex-wrap: wrap; /* wrap on smaller screens */
+  display: flex;           /* enable flexbox */
+  justify-content: center; /* center horizontally */
+  gap: 10px;               /* optional: space between buttons */
+  flex-wrap: wrap;         /* optional: wrap if multiple buttons */
 }
 
 /* Buttons */
@@ -568,6 +571,7 @@ section {
   font-weight: 600;
   font-size: 0.9rem;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .project-links .btn:hover {
@@ -575,6 +579,7 @@ section {
   box-shadow: 0 0 12px var(--main-color);
   background: #0cf; /* optional hover color change */
   color: #000;
+  
 }
 
 /* ===== Project category ===== */
@@ -611,20 +616,31 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  min-height: 350px;
   display: flex;
   flex-direction: column;
 }
 
-/* Image */
-.project-box img { 
-  width: 100%; 
-  height: 200px;  
+/* Default image for all projects except Mobile App */
+.project-box .project-img {
+  width: 100%;
+  height: 200px; /* same size for all */
   object-fit: cover;
-  display: block; 
-  border-radius: 10px 10px 0 0; 
-  transition: transform 0.5s ease; 
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.5s ease;
 }
+
+.project-box.portrait .project-img {
+  height: 490px;       /* smaller height for Mobile App */
+  width: 100%;         /* full width */
+  object-fit: contain;  /* show full image without cropping */
+}
+
+
+/* Ensure hover overlay matches image height */
+.project-box.portrait .project-layer {
+  height: 350px;
+}
+
 
 /* Always visible title & description */
 .project-content {
@@ -632,6 +648,7 @@ section {
   background: var(--second-bg-color);
   color: var(--text-color);
   z-index: 1;
+  text-align: center;
 }
 
 .project-content h3 {
@@ -699,6 +716,8 @@ section {
   transform: translateY(-3px);
   box-shadow: 0 0 12px var(--main-color);
 }
+
+
 
 
 /* ========== Resume ========== */
