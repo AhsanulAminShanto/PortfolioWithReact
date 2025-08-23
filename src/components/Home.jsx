@@ -3,15 +3,20 @@ import Typed from "typed.js";
 
 function Home() {
   const typedRef = useRef(null);
+  
+useEffect(() => {
+  new Typed(typedRef.current, {
+    strings: ["Software Engineer", "Game Developer", "Programmer"],
+    typeSpeed: 150,      // moderate typing speed
+    backSpeed: 100,      // moderate deleting speed
+    backDelay: 1000,     // pause before deleting
+    startDelay: 500,     // pause before typing starts
+    loop: true,
+    showCursor: true,
+    cursorChar: "|"
+  });
+}, []);
 
-  useEffect(() => {
-    new Typed(typedRef.current, {
-      strings: ["Software Engineer", "Game Developer", "Programmer"],
-      typeSpeed: 1,
-      backSpeed: 1,
-      loop: true,
-    });
-  }, []);
 
   return (
     <section className="home" id="home">
