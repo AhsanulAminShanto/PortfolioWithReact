@@ -49,16 +49,17 @@ const Contact = () => {
             <button type="submit" className="btn">Send</button>
           </form>
         </div>
-        <div className="contact-content">
-          <div className="contact-section">
-            <h3>Location & Address</h3>
-            <p><strong>Address:</strong> 123 Tech Street, Digital City, DC 12345</p>
-            <p><strong>Demo Location:</strong> View on Google Maps</p>
-            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="btn">
-              View Map
-            </a>
-          </div>
-        </div>
+        <div className="contact-section">
+  <h3>Location & Address</h3>
+  <p><strong>Present Address:</strong> Kalshi, Mirpur, Dhaka, Bangladesh</p>
+  <p><strong>Permanent Address:</strong> Gopalbari, Sherpur Sadar, Sherpur, Mymensingh, Bangladesh</p>
+<p><strong>Email:</strong> <a href="mailto:ahsanulaminshanto@gmail.com" className="email-link">ahsanulaminshanto@gmail.com</a></p>
+  <p><strong>Contact Number:</strong> +880 1938-772387</p>
+  <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="btn">
+    View Map
+  </a>
+</div>
+
       </div>
     </section>
   );

@@ -921,12 +921,24 @@ section {
   border-radius: 5px;
   text-decoration: none;
   font-weight: 400;
-  transition: 0.3s;
+  transition: all 0.3s ease; /* smooth transition */
   font-size: 0.9rem;
+  position: relative; /* optional for better transform handling */
+  top: -23px;
 }
 
 .contact-section .btn:hover {
-  box-shadow: 0 0 12px var(--main-color);
+  transform: translateY(-3px); /* slide slightly up */
+  box-shadow: 0 6px 12px rgba(0, 238, 255, 0.3); /* optional hover shadow */
+}
+
+.email-link {
+  color: var(--text-color); /* Or any color you want */
+  text-decoration: none;    /* Remove underline */
+}
+
+.email-link:hover {
+  color: var(--main-color); /* Optional hover color */
 }
 
 
