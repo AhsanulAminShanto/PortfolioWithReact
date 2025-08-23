@@ -10,7 +10,9 @@ const useScrollReveal = () => {
       reset: true,
     });
     sr.reveal('.home-content, .heading', { delay: 200 });
-    sr.reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+    sr.reveal('.home-img, .services-container, .portfolio-box, .contact form', {
+      origin: 'bottom',
+    });
   }, []);
 };
 

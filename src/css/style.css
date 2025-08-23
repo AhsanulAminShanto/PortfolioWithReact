@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -88,7 +88,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
 }
 
-
 /* ========== Home ========== */
 section {
   min-height: 100vh;
@@ -116,7 +115,7 @@ section {
 
 .home-content h1 {
   font-size: 2rem;
-  font-weight:700;
+  font-weight: 700;
   font-size: 2.5rem;
   text-align: left;
 }
@@ -143,7 +142,6 @@ section {
   transform: scale(1.05); /* Slight zoom effect on hover */
   box-shadow: 0 15px 40px rgba(14, 238, 255, 0.5); /* Enhanced glow on hover */
 }
-
 
 /* Buttons */
 .btn {
@@ -218,7 +216,6 @@ section {
   font-weight: normal;
   font-style: normal;
 }
-
 
 /* ========== About ========== */
 .about {
@@ -524,7 +521,7 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 15px 5%;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== Project section navbar ===== */
@@ -539,7 +536,7 @@ section {
   gap: 20px;
   padding: 10px 0;
   z-index: 999;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-navbar a {
@@ -554,10 +551,10 @@ section {
 }
 /* Container for buttons */
 .project-links {
-  display: flex;           /* enable flexbox */
+  display: flex; /* enable flexbox */
   justify-content: center; /* center horizontally */
-  gap: 10px;               /* optional: space between buttons */
-  flex-wrap: wrap;         /* optional: wrap if multiple buttons */
+  gap: 10px; /* optional: space between buttons */
+  flex-wrap: wrap; /* optional: wrap if multiple buttons */
 }
 
 /* Buttons */
@@ -579,7 +576,6 @@ section {
   box-shadow: 0 0 12px var(--main-color);
   background: #0cf; /* optional hover color change */
   color: #000;
-  
 }
 
 /* ===== Project category ===== */
@@ -604,11 +600,15 @@ section {
 }
 
 @media screen and (max-width: 1024px) {
-  .project-grid { grid-template-columns: repeat(2, 1fr); }
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .project-grid { grid-template-columns: 1fr; }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ===== Project box ===== */
@@ -630,17 +630,15 @@ section {
 }
 
 .project-box.portrait .project-img {
-  height: 490px;       /* smaller height for Mobile App */
-  width: 100%;         /* full width */
-  object-fit: contain;  /* show full image without cropping */
+  height: 490px; /* smaller height for Mobile App */
+  width: 100%; /* full width */
+  object-fit: contain; /* show full image without cropping */
 }
-
 
 /* Ensure hover overlay matches image height */
 .project-box.portrait .project-layer {
   height: 350px;
 }
-
 
 /* Always visible title & description */
 .project-content {
@@ -717,9 +715,6 @@ section {
   box-shadow: 0 0 12px var(--main-color);
 }
 
-
-
-
 /* ========== Resume ========== */
 
 /* Define the local font */
@@ -729,8 +724,6 @@ section {
   font-weight: normal;
   font-style: normal;
 }
-
-
 
 .resume {
   min-height: 100vh;
@@ -982,7 +975,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .contact-section h3 {
@@ -1022,16 +1014,15 @@ section {
 
 .email-link {
   color: var(--text-color); /* Or any color you want */
-  text-decoration: none;    /* Remove underline */
+  text-decoration: none; /* Remove underline */
 }
 
 .email-link:hover {
   color: var(--main-color); /* Optional hover color */
 }
 
-
 /* Fallback to ensure button styles apply */
-button[type="submit"] {
+button[type='submit'] {
   background: var(--main-color);
   color: #000;
   border: none;
@@ -1082,13 +1073,27 @@ button[type="submit"] {
     font-size: 14px;
   }
 
-  .home-content h1 { font-size: 1.5rem; }
-  .home-content h3 { font-size: 1.2rem; }
-  .home-img img { width: 180px; }
-  .about { flex-direction: column; }
-  .about-img img { width: 150px; }
-  .services-container { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
-  .portfolio-container { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+  .home-content h1 {
+    font-size: 1.5rem;
+  }
+  .home-content h3 {
+    font-size: 1.2rem;
+  }
+  .home-img img {
+    width: 180px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about-img img {
+    width: 150px;
+  }
+  .services-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .portfolio-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1096,20 +1101,52 @@ button[type="submit"] {
     padding: 8px 2%;
   }
 
-  .logo { font-size: 18px; }
-  #menu-icon { font-size: 20px; }
-  .navbar a { font-size: 12px; margin: 6px 0; }
+  .logo {
+    font-size: 18px;
+  }
+  #menu-icon {
+    font-size: 20px;
+  }
+  .navbar a {
+    font-size: 12px;
+    margin: 6px 0;
+  }
 
-  .home-content h1 { font-size: 1.2rem; }
-  .home-content h3 { font-size: 1rem; }
-  .home-content p { font-size: 0.8rem; }
-  .home-img img { width: 120px; }
-  .about-content h2 { font-size: 1.5rem; }
-  .about-img img { width: 120px; }
-  .services h2 { font-size: 1.5rem; }
-  .services-container { grid-template-columns: 1fr; }
-  .portfolio-container { grid-template-columns: 1fr; }
-  .services-box i { font-size: 1.5rem; }
-  .contact form { max-width: 300px; }
-  .input-box input, textarea { font-size: 0.8rem; }
+  .home-content h1 {
+    font-size: 1.2rem;
+  }
+  .home-content h3 {
+    font-size: 1rem;
+  }
+  .home-content p {
+    font-size: 0.8rem;
+  }
+  .home-img img {
+    width: 120px;
+  }
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+  .about-img img {
+    width: 120px;
+  }
+  .services h2 {
+    font-size: 1.5rem;
+  }
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+  .services-box i {
+    font-size: 1.5rem;
+  }
+  .contact form {
+    max-width: 300px;
+  }
+  .input-box input,
+  textarea {
+    font-size: 0.8rem;
+  }
 }

@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 function Footer() {
   const location = useLocation(); // get current page path
@@ -7,7 +7,7 @@ function Footer() {
     e.preventDefault();
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
