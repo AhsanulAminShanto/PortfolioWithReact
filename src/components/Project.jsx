@@ -90,12 +90,13 @@ function Project() {
     },
     {
       id: 9,
-      title: 'Blog Platform',
+      title: 'Enhanced Health Monitoring Platform',
       category: 'Backend',
-      desc: 'Developed full-stack blog platform with CRUD operations.',
-      img: '/images/portfolio6.jpg',
-      github: '#',
-      live: '#',
+      desc: 'A platform designed for health monitoring for Diabetes patients.',
+      img: '/images/download.jpeg',
+      github:
+        'https://github.com/AhsanulAminShanto/Enhanced-Health-Monitoring-Platform1',
+      live: '',
     },
     {
       id: 10,
