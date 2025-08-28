@@ -29,6 +29,13 @@ const Skills = () => {
                 alt="C++"
               />
             </div>
+            <div className="tech-item" data-name="C#">
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons/icons/csharp.svg"
+                alt="C#"
+              />
+            </div>
+
             <div className="tech-item" data-name="Java">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
@@ -210,6 +217,12 @@ const Skills = () => {
               <img
                 src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/latex.svg"
                 alt="LaTeX"
+              />
+            </div>
+            <div className="tech-item" data-name="Unity Hub">
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons/icons/unity.svg"
+                alt="Unity Hub"
               />
             </div>
           </div>
